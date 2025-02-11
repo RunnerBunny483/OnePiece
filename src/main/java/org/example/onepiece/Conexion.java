@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class JDBC {
+public class Conexion {
     //Se establecen los parámetros de acceso a la BD
     private static String os;
     private static String usuario = "root";
@@ -14,7 +14,7 @@ public class JDBC {
     private static Connection conexion = null;
 
     //Constructor de la clase JDBC:
-    public JDBC() {
+    public Conexion() {
         try{
             Class.forName("org.mariadb.jdbc.Driver");
             setOS();
@@ -28,7 +28,7 @@ public class JDBC {
     //Al hacer getConexión comprobará si se ha creado o no, si no se había creado invoca el constructor JDBC
     public static Connection getConexion() {
         if (conexion == null) {
-            new JDBC();
+            new Conexion();
         }
         return conexion;
     }
@@ -47,6 +47,6 @@ public class JDBC {
     }
 
     public static void setUsuario(String usuario) {
-        JDBC.usuario = usuario;
+        Conexion.usuario = usuario;
     }
 }
