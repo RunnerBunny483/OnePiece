@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.onepiece.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="326.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/OnePieceLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="286.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" rotate="5.0">
+         <image>
+            <Image url="@images/be36d6b0334505923b9fcfa24a4dfac5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="158.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" rotate="-5.0">
+         <image>
+            <Image url="@images/a8560fb2df083c65d66e90d94e533a27.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="224.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/605a8b497ad524702ea37014c5809670.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="35.0" layoutY="155.0" mnemonicParsing="false" text="Crear póster" />
+      <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" text="Buscar póster" />
+      <Label layoutX="15.0" layoutY="285.0" text="Ayuda" />
+   </children>
+</Pane>
