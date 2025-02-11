@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onepiece.OnePieceController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="326.0" layoutX="59.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/OnePieceLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="308.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" rotate="5.0">
+         <image>
+            <Image url="@images/be36d6b0334505923b9fcfa24a4dfac5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="180.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" rotate="-5.0">
+         <image>
+            <Image url="@images/a8560fb2df083c65d66e90d94e533a27.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="115.0" layoutX="246.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/605a8b497ad524702ea37014c5809670.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="crearPoster" layoutX="38.0" layoutY="175.0" mnemonicParsing="false" text="Crear póster" />
+      <Button fx:id="buscarPoster" layoutX="36.0" layoutY="207.0" mnemonicParsing="false" text="Buscar póster" />
+      <Label fx:id="ayuda" layoutX="15.0" layoutY="285.0"/>
+      <ComboBox fx:id="idioma" layoutX="63.0" layoutY="281.0" prefHeight="25.0" prefWidth="88.0" promptText="Idioma" />
+   </children>
+</Pane>
