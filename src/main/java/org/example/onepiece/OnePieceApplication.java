@@ -16,7 +16,7 @@ public class OnePieceApplication extends Application {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("onepiece", locale);
 
         FXMLLoader fxmlLoader = new FXMLLoader(OnePieceApplication.class.getResource("principal-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 415, 325);
+        Scene scene = new Scene(fxmlLoader.load(), 450, 325);
         stage.setTitle("One Piece Application");
         stage.setScene(scene);
         stage.show();
