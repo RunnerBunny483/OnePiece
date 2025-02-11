@@ -75,7 +75,7 @@ public class OnePieceController {
                 manual=manualEspañol;
             }
 
-            if(manual!=null){
+            //if(manual!=null){
                 String sistemaOperativo = System.getProperty("os.name").toLowerCase();
 
                 if (sistemaOperativo.contains("win")) {
@@ -84,7 +84,7 @@ public class OnePieceController {
                     //Para LInux
                     Runtime.getRuntime().exec(new String[]{"xdg-open", manual.getAbsolutePath()});
                 }
-            }
+            //}
 
         }catch (IOException e){
             e.printStackTrace();
