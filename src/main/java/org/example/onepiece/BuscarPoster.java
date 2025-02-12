@@ -26,4 +26,6 @@ public class BuscarPoster {
                 "Charlotte Valin", "Charlotte Lemo", "Charlotte Conne", "Bentham (Bon Clay)",
                 "Galdino (Mr. 3)", "Sogeking", "Usopp");
     }
+
+
 }

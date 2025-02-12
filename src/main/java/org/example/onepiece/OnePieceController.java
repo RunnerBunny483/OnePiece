@@ -5,7 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Button;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +20,10 @@ public class OnePieceController {
     private Label ayuda;
     @FXML
     private ComboBox idioma;
+    @FXML
+    private Button crearPoster;
+    @FXML
+    private Button buscarPoster;
 
     public void initialize() {
         //Añadir los idiomas al combo box
@@ -59,6 +65,9 @@ public class OnePieceController {
     //Método que cambia todas las palabras de idioma
     public void actualizarIdiomaVentana() {
         ayuda.setText(resourceBundle.getString("Ayuda"));
+        crearPoster.setText(resourceBundle.getString("CrearPoster"));
+        buscarPoster.setText(resourceBundle.getString("BuscarPoster"));
+
     }
 
     //Método para abrir el manual de usuario

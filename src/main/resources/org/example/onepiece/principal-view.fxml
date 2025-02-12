@@ -29,8 +29,8 @@
             <Image url="@images/605a8b497ad524702ea37014c5809670.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="crearPoster" layoutX="36.0" layoutY="173.0" mnemonicParsing="false" text="Crear póster" />
-      <Button fx:id="buscarPoster" layoutX="36.0" layoutY="207.0" mnemonicParsing="false" text="Buscar póster" />
+      <Button fx:id="crearPoster" layoutX="36.0" layoutY="173.0" mnemonicParsing="false" />
+      <Button fx:id="buscarPoster" layoutX="36.0" layoutY="207.0" mnemonicParsing="false"/>
       <Label fx:id="ayuda" layoutX="15.0" layoutY="285.0" />
       <ComboBox fx:id="idioma" layoutX="63.0" layoutY="281.0" prefHeight="25.0" prefWidth="88.0" promptText="Idioma" />
    </children>
