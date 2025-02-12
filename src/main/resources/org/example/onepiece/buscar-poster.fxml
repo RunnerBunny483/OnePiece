@@ -9,7 +9,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="95.0" fitWidth="277.0" layoutX="72.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
@@ -25,10 +24,7 @@
             <ToggleGroup fx:id="Bounty" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="Menor" layoutX="130.0" layoutY="255.0" mnemonicParsing="false" text="Menor que">
-         <toggleGroup>
-            <ToggleGroup fx:id="Bounty" />
-         </toggleGroup>
+      <RadioButton fx:id="Menor" layoutX="130.0" layoutY="255.0" mnemonicParsing="false" text="Menor que" toggleGroup="$Bounty">
       </RadioButton>
       <TextField fx:id="Recompensa" layoutX="230.0" layoutY="240.0" prefHeight="25.0" prefWidth="92.0" />
       <Button fx:id="BuscarPoster" layoutX="159.0" layoutY="306.0" mnemonicParsing="false" text="Buscar póster" />
