@@ -6,7 +6,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.awt.*;
 import java.util.ResourceBundle;
 
 public class CrearPoster {

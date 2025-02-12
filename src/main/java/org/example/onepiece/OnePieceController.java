@@ -26,9 +26,8 @@ public class OnePieceController {
     @FXML
     private ComboBox idioma;
     @FXML
-    private Button crearPoster;
-    @FXML
-    private Button buscarPoster;
+    private Button crearPoster, buscarPoster, botonGenerar;
+
 
     public void initialize() {
         //Añadir los idiomas al combo box
@@ -68,6 +67,7 @@ public class OnePieceController {
         ayuda.setText(resourceBundle.getString("Ayuda"));
         crearPoster.setText(resourceBundle.getString("CrearPoster"));
         buscarPoster.setText(resourceBundle.getString("BuscarPoster"));
+        botonGenerar.setText(resourceBundle.getString("BotonGenerar"));
 
     }
 
@@ -121,6 +121,19 @@ public class OnePieceController {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Crear Poster");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    //Método para abrir "Generar Informe"
+    public void abrirBotonGenerar() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/generar-informe.fxml"));
+
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setTitle("Generar Informe");
         stage.setScene(new Scene(root));
         stage.show();
     }

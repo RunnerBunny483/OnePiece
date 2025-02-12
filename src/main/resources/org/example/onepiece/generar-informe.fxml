@@ -16,9 +16,9 @@
             <Image url="@images/OnePieceLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="110.0" layoutY="130.0" text="Recompensa a partir de: " />
+      <Label fx:id="labelRecompensa" layoutX="110.0" layoutY="130.0"  />
       <TextField fx:id="Recompensa" layoutX="110.0" layoutY="155.0" />
-      <Label layoutX="110.0" layoutY="200.0" text="Tripulación:" />
+      <Label fx:id="labelTripulacion" layoutX="110.0" layoutY="200.0" />
       <Button fx:id="GenerarInforme" layoutX="135.0" layoutY="290.0" mnemonicParsing="false" text="Generar informe" />
       <ComboBox fx:id="Tripulacion" layoutX="110.0" layoutY="225.0" prefHeight="26.0" prefWidth="181.0" promptText="Selecciona una tripulación" />
    </children>
