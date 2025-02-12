@@ -333,7 +333,7 @@ INSERT INTO piratas VALUES
 (57,'Galdino (Mr. 3)','Mr. 3',24000000,'Ex-Baroque Works',37,'Grand Line','Doru Doru no Mi','Pirata normal','/Galdino-Mr-3.png'),
 (58,'Sogeking','Rey de los francotiradores',30000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens','Pirata normal','/Sogeking.png'),
 (59,'Usopp','God Usopp',200000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens, Haki de Observación','Pirata normal','/Usopp.png');
-/*!40000 ALTER TABLE `piratas` ENABLE KEYS */;
+/*!40000 ALTER TABLE `piratas` ENABLE KEYS*/;
 UNLOCK TABLES;
 
 --
