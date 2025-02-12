@@ -3,12 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.control.TextField?>
-
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to bottom, #e0c49d, #c9a97d); -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.5, 0, 5); -fx-border-color: black; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onepiece.CrearPoster">
    <children>
-      <Label fx:id="labelNombre" layoutX="120.0" layoutY="120.0" text="Nombre:" />
+      <Label fx:id="labelNombre" layoutX="120.0" layoutY="120.0" />
       <TextField fx:id="textFieldNombre" layoutX="120.0" layoutY="145.0" />
       <Label fx:id="labelRecompensa" layoutX="120.0" layoutY="190.0" />
       <TextField layoutX="120.0" layoutY="215.0" prefHeight="25.0" prefWidth="122.0" />
