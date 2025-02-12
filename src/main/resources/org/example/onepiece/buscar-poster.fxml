@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onepiece.BuscarPoster">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="380.0" style="-fx-background-color: linear-gradient(to bottom, #e0c49d, #c9a97d); -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.5, 0, 5); -fx-border-color: black; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onepiece.BuscarPoster">
    <children>
-      <ImageView fitHeight="95.0" fitWidth="277.0" layoutX="72.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="95.0" fitWidth="277.0" layoutX="50.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/OnePieceLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="130.0" layoutY="130.0" text="Nombre:" />
-      <TextField fx:id="Nombre" layoutX="130.0" layoutY="155.0" />
-      <Label layoutX="130.0" layoutY="200.0" text="Recompensa:" />
-      <RadioButton fx:id="Mayor" layoutX="130.0" layoutY="230.0" mnemonicParsing="false" text="Mayor que">
-         <toggleGroup>
-            <ToggleGroup fx:id="Bounty" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="Menor" layoutX="130.0" layoutY="255.0" mnemonicParsing="false" text="Menor que" toggleGroup="$Bounty">
-      </RadioButton>
-      <TextField fx:id="Recompensa" layoutX="230.0" layoutY="240.0" prefHeight="25.0" prefWidth="92.0" />
-      <Button fx:id="BuscarPoster" layoutX="159.0" layoutY="306.0" mnemonicParsing="false" text="Buscar póster" />
+      <Label layoutX="110.0" layoutY="130.0" text="Pirata: " />
+      <Button fx:id="BuscarPoster" layoutX="140.0" layoutY="205.0" mnemonicParsing="false" text="Buscar póster" />
+      <ComboBox fx:id="desplegablePirata" layoutX="110.0" layoutY="155.0" prefHeight="26.0" prefWidth="176.0" promptText="Selecciona un pirata" />
    </children>
 </Pane>
