@@ -2,9 +2,14 @@ package org.example.onepiece;
 
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.awt.*;
 import java.io.File;
@@ -89,5 +94,31 @@ public class OnePieceController {
         }catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    //Método para cambiar de controlador al pulsar en buscar poster
+    public void abrirBuscarPoster() throws IOException {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/org/example/onepiece/buscar-poster.fxml"));
+            Parent root = loader.load();
+
+            //Nueva ventana
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setTitle("Buscar Poster");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+    }
+
+    //Método para cambiar de controlador al pulsar en crear poster
+    public void abrirCrearPoster() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("src/main/resources/org/example/onepiece/crear-poster.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setTitle("Crear Poster");
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 }
