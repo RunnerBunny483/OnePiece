@@ -18,11 +18,21 @@
       <TextField fx:id="Imagen" editable="false" layoutX="120.0" layoutY="285.0" prefHeight="25.0" prefWidth="81.0" />
       <Label layoutX="120.0" layoutY="260.0" text="Imagen:" />
       <Button fx:id="CrearPoster" layoutX="160.0" layoutY="346.0" mnemonicParsing="false" text="Crear póster" />
+      <ImageView fitHeight="134.0" fitWidth="94.0" layoutX="285.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Vinsmoke_Sanji27s_Wanted_Poster.jpg" />
+         </image>
+      </ImageView>
       <ImageView fitHeight="95.0" fitWidth="277.0" layoutX="62.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/OnePieceLogo.png" />
          </image>
       </ImageView>
       <CheckBox fx:id="SoulKing" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" text="Póster especial" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/a8560fb2df083c65d66e90d94e533a27.jpg" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
