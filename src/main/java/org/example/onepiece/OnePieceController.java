@@ -43,7 +43,7 @@ public class OnePieceController {
 
     }
 
-    //Método para ver que opción del combobox de idiomas está elegida
+    //Método para ver qué opción del combobox de idiomas está elegida
     public void seleccionIdioma() {
         String seleccion = (String) idioma.getValue();
         Locale locale;
@@ -81,7 +81,7 @@ public class OnePieceController {
                 if (sistemaOperativo.contains("win")) {
                     Desktop.getDesktop().browse(manual.toURI());
                 } else if (sistemaOperativo.contains("nix") || sistemaOperativo.contains("nux")) {
-                    //Para LInux
+                    //Para Linux
                     Runtime.getRuntime().exec(new String[]{"xdg-open", manual.getAbsolutePath()});
                 }
             //}
