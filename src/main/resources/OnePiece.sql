@@ -320,19 +320,18 @@ INSERT INTO piratas VALUES
 (44,'Portgas D. Ace','Puño de Fuego',550000000,'Piratas de Barbablanca',20,'South Blue','Mera Mera no Mi','Pirata normal','/Portgas-D-Ace.png'),
 (45,'Charlotte Cracker','El Caballero de Galleta',860000000,'Piratas de Big Mom',48,'Totto Land','Bisu Bisu no Mi','Pirata normal','/Charlotte-Cracker.png'),
 (46,'Charlotte Smoothie','La Gran Smoothie',2000000000,'Piratas de Big Mom',28,'Totto Land','Asa Asa no Mi','Pirata normal','/Charlotte-Smoothie.png'),
-(47,'Charlotte Katakuri','Dulce Comandante',1260000000,'Piratas de Big Mom',48,'Totto Land','Mochi Mochi no Mi','Pirata normal','/Charlotte-Katakuri.png'),
-(48,'Charlotte Daifuku','El Gran Daifuku',500000000,'Piratas de Big Mom',48,'Totto Land','Hoya Hoya no Mi','Pirata normal','/Charlotte-Daifuku.png'),
-(49,'Charlotte Oven','El Calor',600000000,'Piratas de Big Mom',48,'Totto Land','Kake Kake no Mi','Pirata normal','/Charlotte-Oven.png'),
-(50,'Charlotte Perospero','El Hermano Mayor',700000000,'Piratas de Big Mom',44,'Totto Land','Soko Soko no Mi','Pirata normal','/Charlotte-Perospero.png'),
-(51,'Charlotte Mont-d Or','El Gran Mont-d Or',400000000,'Piratas de Big Mom',49,'Totto Land','Buku Buku no Mi','Pirata normal','/Charlotte-Mont-d-Or.png'),
-(52,'Charlotte Amande','La Tercera Hija',200000000,'Piratas de Big Mom',33,'Totto Land','Sakana Sakana no Mi','Pirata normal','/Charlotte-Amande.png'),
-(53,'Charlotte Valin','La Cuarta Hija',180000000,'Piratas de Big Mom',29,'Totto Land','Kohi Kohi no Mi','Pirata normal','/Charlotte-Valin.png'),
-(54,'Charlotte Lemo','La Quinto Hija',160000000,'Piratas de Big Mom',26,'Totto Land','Jikasei no Mi','Pirata normal','/Charlotte-Lemo.png'),
-(55,'Charlotte Conne','La Sexta Hija',140000000,'Piratas de Big Mom',23,'Totto Land','Mizu Mizu no Mi','Pirata normal','/Charlotte-Conne.png'),
-(56,'Bentham (Bon Clay)','Mr. 2',32000000,'Ex-Baroque Works',30,'South Blue','Okama Kenpo y Mane Mane no Mi','Pirata normal','/Bentham-Bon-Clay.png'),
-(57,'Galdino (Mr. 3)','Mr. 3',24000000,'Ex-Baroque Works',37,'Grand Line','Doru Doru no Mi','Pirata normal','/Galdino-Mr-3.png'),
-(58,'Sogeking','Rey de los francotiradores',30000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens','Pirata normal','/Sogeking.png'),
-(59,'Usopp','God Usopp',200000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens, Haki de Observación','Pirata normal','/Usopp.png');
+(47,'Charlotte Daifuku','El Gran Daifuku',500000000,'Piratas de Big Mom',48,'Totto Land','Hoya Hoya no Mi','Pirata normal','/Charlotte-Daifuku.png'),
+(48,'Charlotte Oven','El Calor',600000000,'Piratas de Big Mom',48,'Totto Land','Kake Kake no Mi','Pirata normal','/Charlotte-Oven.png'),
+(49,'Charlotte Perospero','El Hermano Mayor',700000000,'Piratas de Big Mom',44,'Totto Land','Soko Soko no Mi','Pirata normal','/Charlotte-Perospero.png'),
+(50,'Charlotte Mont-d Or','El Gran Mont-d Or',400000000,'Piratas de Big Mom',49,'Totto Land','Buku Buku no Mi','Pirata normal','/Charlotte-Mont-d-Or.png'),
+(51,'Charlotte Amande','La Tercera Hija',200000000,'Piratas de Big Mom',33,'Totto Land','Sakana Sakana no Mi','Pirata normal','/Charlotte-Amande.png'),
+(52,'Charlotte Valin','La Cuarta Hija',180000000,'Piratas de Big Mom',29,'Totto Land','Kohi Kohi no Mi','Pirata normal','/Charlotte-Valin.png'),
+(53,'Charlotte Lemo','La Quinto Hija',160000000,'Piratas de Big Mom',26,'Totto Land','Jikasei no Mi','Pirata normal','/Charlotte-Lemo.png'),
+(54,'Charlotte Conne','La Sexta Hija',140000000,'Piratas de Big Mom',23,'Totto Land','Mizu Mizu no Mi','Pirata normal','/Charlotte-Conne.png'),
+(55,'Bentham (Bon Clay)','Mr. 2',32000000,'Ex-Baroque Works',30,'South Blue','Okama Kenpo y Mane Mane no Mi','Pirata normal','/Bentham-Bon-Clay.png'),
+(56,'Galdino (Mr. 3)','Mr. 3',24000000,'Ex-Baroque Works',37,'Grand Line','Doru Doru no Mi','Pirata normal','/Galdino-Mr-3.png'),
+(57,'Sogeking','Rey de los francotiradores',30000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens','Pirata normal','/Sogeking.png'),
+(58,'Usopp','God Usopp',200000000,'Piratas de Sombrero de Paja',19,'Syrup Village','Puntería excepcional, uso de Pop Greens, Haki de Observación','Pirata normal','/Usopp.png');
 /*!40000 ALTER TABLE `piratas` ENABLE KEYS*/;
 UNLOCK TABLES;
 
