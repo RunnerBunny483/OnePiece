@@ -3,6 +3,7 @@ package org.example.onepiece;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 
 import java.util.ResourceBundle;
 
@@ -12,6 +13,9 @@ public class BuscarPoster {
 
     @FXML
     private Button BuscarPoster;
+    @FXML
+    private Label labelPirata;
+
 
     public void initialize() {
         actualizarIdiomaVentana();
@@ -35,5 +39,6 @@ public class BuscarPoster {
         ResourceBundle resourceBundle=IdiomaController.getResourceBundle();
         desplegablePirata.setPromptText(resourceBundle.getString("DesplegablePirata"));
         BuscarPoster.setText(resourceBundle.getString("Generar"));
+        labelPirata.setText(resourceBundle.getString("LabelPirata"));
     }
 }
