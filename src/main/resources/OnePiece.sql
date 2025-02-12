@@ -20,7 +20,7 @@
 --
 
 CREATE OR REPLACE DATABASE OnePiece;
-USE DATABASE OnePiece;
+USE OnePiece;
 
 DROP TABLE IF EXISTS `facciones`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
