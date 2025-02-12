@@ -7,6 +7,13 @@ import javafx.scene.control.Label;
 
 import java.util.ResourceBundle;
 
+/**
+ * Controlador de la vista buscar-poster.fxml para la ventana de búsqueda de posters de los personajes de One Piece.
+ * Permite al usuario seleccionar un pirata de una lista desplegable y generar un poster.
+ *
+ * @author Gabriela Jiménez Morcillo
+ */
+
 public class BuscarPoster {
     @FXML
     private ComboBox<String> desplegablePirata;
@@ -16,7 +23,10 @@ public class BuscarPoster {
     @FXML
     private Label labelPirata;
 
-
+    /**
+     * Método que se ejecuta al inicializar la ventana.
+     * Rellena el ComboBox con los nombres de los piratas
+     */
     public void initialize() {
         actualizarIdiomaVentana();
         //Añadir los idiomas al combo box
@@ -34,6 +44,9 @@ public class BuscarPoster {
                 "Galdino (Mr. 3)", "Sogeking", "Usopp");
     }
 
+    /**
+     * Actualiza los textos de la ventana según el idioma seleccionado.
+     */
     //Método que cambia todas las palabras de idioma
     public void actualizarIdiomaVentana() {
         ResourceBundle resourceBundle=IdiomaController.getResourceBundle();

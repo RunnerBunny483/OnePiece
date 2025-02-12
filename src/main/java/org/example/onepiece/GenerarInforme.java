@@ -9,6 +9,12 @@ import javafx.scene.control.Label;
 import java.awt.*;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador de la vista generar-indorme.fxml para la ventana de generación de informes según los parámetros introducidos por el usuario.
+ * Permite al usuario introducir los datos que desee en los campos Tipulación y recompensa.
+
+ * @author Gabriela Jiménez Morcillo
+ */
 public class GenerarInforme {
 
     @FXML
@@ -22,6 +28,10 @@ public class GenerarInforme {
     @FXML
     private Label labelTripulacion, labelRecompensa;
 
+    /**
+     * Método que se ejecuta al inicializar la ventana.
+     * Rellena el ComboBox con los nombres de la tripulación y cambia el array según el idioma seleccionado pro el usuario en la ventana principal
+     */
     public void initialize() {
         actualizarIdiomaVentana();
 
@@ -35,6 +45,9 @@ public class GenerarInforme {
         }
     }
 
+    /**
+     * Actualiza los textos de la ventana según el idioma seleccionado.
+     */
     //Método que cambia todas las palabras de idioma
     public void actualizarIdiomaVentana() {
         ResourceBundle resourceBundle=IdiomaController.getResourceBundle();

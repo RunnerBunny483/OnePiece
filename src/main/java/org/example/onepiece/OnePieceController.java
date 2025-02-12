@@ -19,6 +19,16 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * Controlador principal de aplicación
+ * Gestiona el funcionamiento de los botones y el combo box de idiomas.
+ * Abre las distintas ventanas al puslar su botón correspondiente.
+ * Permite al usuario seleccionar el idioma de la aplicación y acceder al manual de usuario
+ * El manual de usuario tambien tiene una versión en inglés y otra en español
+ *
+ * @author Gabriela Jiménez Morcillo
+ */
+
 public class OnePieceController {
     private ResourceBundle resourceBundle;
     @FXML
@@ -28,7 +38,10 @@ public class OnePieceController {
     @FXML
     private Button crearPoster, buscarPoster, botonGenerar;
 
-
+    /**
+     * Inicializa los componentes y configura el idioma.
+     * Abre el manual de usuario al hacer click en el label
+     */
     public void initialize() {
         //Añadir los idiomas al combo box
         idioma.getItems().addAll("Español", "English");
@@ -53,6 +66,9 @@ public class OnePieceController {
 
     }
 
+    /**
+     * Cambia el idioma de la aplicación según la opción seleccionada por el usuario en el combo box idioma
+     */
     //Método para cambiar idioma según la opción del combo box
     public void seleccionIdioma() {
         String seleccion = (String) idioma.getValue();
@@ -62,6 +78,9 @@ public class OnePieceController {
         actualizarIdiomaVentana();
     }
 
+    /**
+     * Actualiza los textos de todos los elementos dependiendo del idioma seleccionado.
+     */
     //Método que cambia todas las palabras de idioma
     public void actualizarIdiomaVentana() {
         ayuda.setText(resourceBundle.getString("Ayuda"));
@@ -71,6 +90,10 @@ public class OnePieceController {
 
     }
 
+    /**
+     * Abre el manual de usuario en el idioma dependiendo del idoma seleccionado
+     * El manual se abre en el navegador dependiendo del sistema operativo del usuario.
+     */
     //Método para abrir el manual de usuario
     public void abrirManualUsuario(){
         try{
@@ -101,6 +124,11 @@ public class OnePieceController {
         }
     }
 
+    /**
+     * Abre la ventana Buscar Poster
+     *
+     * @throws IOException Si ocurre un error al cargar el archivo FXML.
+     */
     //Método para abrir "Buscar Poster"
     public void abrirBuscarPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/buscar-poster.fxml"));
@@ -113,6 +141,11 @@ public class OnePieceController {
         stage.show();
     }
 
+    /**
+     * Abre la ventana Crear Poster
+     *
+     * @throws IOException Si ocurre un error al cargar el archivo FXML.
+     */
     //Método para abrir "Crear Poster"
     public void abrirCrearPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/crear-poster.fxml"));
@@ -125,6 +158,11 @@ public class OnePieceController {
         stage.show();
     }
 
+    /**
+     * Abre la ventana Generar Informe
+     *
+     * @throws IOException Si ocurre un error al cargar el archivo FXML.
+     */
     //Método para abrir "Generar Informe"
     public void abrirBotonGenerar() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/generar-informe.fxml"));
