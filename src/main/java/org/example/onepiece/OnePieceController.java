@@ -54,18 +54,14 @@ public class OnePieceController {
 
     }
 
-    //Método para ver qué opción del combobox de idiomas está elegida
+    //Método para cambiar idioma según la opción del combo box
     public void seleccionIdioma() {
         String seleccion = (String) idioma.getValue();
-        Locale locale;
-        if("English".equals(seleccion)) {
-            locale = new Locale("en");
-        } else {
-            locale = new Locale("es");
-        }
 
-        resourceBundle = ResourceBundle.getBundle("onepiece", locale);
-        actualizarIdiomaVentana();    }
+        IdiomaController.seleccionIdioma(seleccion);
+        resourceBundle= IdiomaController.getResourceBundle();
+        actualizarIdiomaVentana();
+    }
 
     //Método que cambia todas las palabras de idioma
     public void actualizarIdiomaVentana() {
@@ -105,7 +101,7 @@ public class OnePieceController {
         }
     }
 
-    // Método para abrir "Buscar Poster"
+    //Método para abrir "Buscar Poster"
     public void abrirBuscarPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/buscar-poster.fxml"));
         Parent root = loader.load();
@@ -117,7 +113,7 @@ public class OnePieceController {
         stage.show();
     }
 
-    // Método para abrir "Crear Poster"
+    //Método para abrir "Crear Poster"
     public void abrirCrearPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/crear-poster.fxml"));
         Parent root = loader.load();

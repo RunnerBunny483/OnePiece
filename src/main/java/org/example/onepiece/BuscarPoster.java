@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 
+import java.util.ResourceBundle;
+
 public class BuscarPoster {
     @FXML
     private ComboBox<String> desplegablePirata;
@@ -12,6 +14,7 @@ public class BuscarPoster {
     private Button BuscarPoster;
 
     public void initialize() {
+        actualizarIdiomaVentana();
         //Añadir los idiomas al combo box
         desplegablePirata.getItems().addAll("Gol D. Roger", "Edward Newgate", "Kaido", "Charlotte Linlin", "Shanks",
                 "Marshall D. Teach", "Monkey D. Luffy", "Roronoa Zoro", "Sanji", "Nico Robin",
@@ -27,5 +30,10 @@ public class BuscarPoster {
                 "Galdino (Mr. 3)", "Sogeking", "Usopp");
     }
 
-
+    //Método que cambia todas las palabras de idioma
+    public void actualizarIdiomaVentana() {
+        ResourceBundle resourceBundle=IdiomaController.getResourceBundle();
+        desplegablePirata.setPromptText(resourceBundle.getString("DesplegablePirata"));
+        BuscarPoster.setText(resourceBundle.getString("Generar"));
+    }
 }
