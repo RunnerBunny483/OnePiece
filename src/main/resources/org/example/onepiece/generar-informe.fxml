@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="380.0" style="-fx-background-color: linear-gradient(to bottom, #e0c49d, #c9a97d); -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.5, 0, 5); -fx-border-color: black; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="380.0" style="-fx-background-color: linear-gradient(to bottom, #e0c49d, #c9a97d); -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.5, 0, 5); -fx-border-color: black; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.onepiece.GenerarInforme">
    <children>
       <ImageView fitHeight="95.0" fitWidth="277.0" layoutX="50.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>

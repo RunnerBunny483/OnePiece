@@ -1,11 +1,15 @@
 package org.example.onepiece;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 
 public class BuscarPoster {
     @FXML
     private ComboBox<String> desplegablePirata;
+
+    @FXML
+    private Button BuscarPoster;
 
     public void initialize() {
         //Añadir los idiomas al combo box
