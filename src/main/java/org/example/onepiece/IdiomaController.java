@@ -25,6 +25,15 @@ public class IdiomaController {
     }
 
     /**
+     * Obtiene el {@link Locale} correspondiente al idioma que elige el usuario.
+     *
+     * @return El {@link Locale} con el idioma elegido.
+     */
+    public static Locale getLocale() {
+        return locale;
+    }
+
+    /**
      * Método que cambia de forma dinámica el icioma según la opción elegida por el usuario
      *
      * @param idioma es un String que coincide o no con el valor elegido por el usuario en el combo box
