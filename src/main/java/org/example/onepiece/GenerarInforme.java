@@ -1,10 +1,7 @@
 package org.example.onepiece;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JRException;
@@ -69,7 +66,9 @@ public class GenerarInforme {
         labelTripulacion.setText(resourceBundle.getString("LabelTripulacion"));
         Tripulacion.setPromptText(resourceBundle.getString("PromptTextTripulacion"));
         labelRecompensa.setText(resourceBundle.getString("LabelRecompensa"));
-
+        Recompensa.setTooltip(new Tooltip(resourceBundle.getString("TltRecompensa2")));
+        Tripulacion.setTooltip(new Tooltip(resourceBundle.getString("TltTripulacion")));
+        GenerarInforme.setTooltip(new Tooltip(resourceBundle.getString("TltbtnGenerarInforme")));
     }
 
     /**

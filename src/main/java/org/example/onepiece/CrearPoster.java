@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 
 import java.util.ResourceBundle;
 
@@ -45,6 +46,10 @@ public class CrearPoster {
         labelRecompensa.setText(resourceBundle.getString("Recompensa"));
         labelImagen.setText(resourceBundle.getString("Imagen"));
         CrearPoster.setText(resourceBundle.getString("Crear"));
+        textFieldNombre.setTooltip(new Tooltip(resourceBundle.getString("TltNombre")));
+        Recompensa.setTooltip(new Tooltip(resourceBundle.getString("TltRecompensa")));
+        ImagenBoton.setTooltip(new Tooltip(resourceBundle.getString("TltImagen")));
+        CrearPoster.setTooltip(new Tooltip(resourceBundle.getString("TltbtnCrearPoster")));
     }
 
 }

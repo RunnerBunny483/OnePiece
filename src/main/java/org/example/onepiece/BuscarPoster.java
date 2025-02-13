@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 
 import java.util.ResourceBundle;
 
@@ -29,7 +30,7 @@ public class BuscarPoster {
      */
     public void initialize() {
         actualizarIdiomaVentana();
-        //Añadir los idiomas al combo box
+        //Añadir los personajes al combo box
         desplegablePirata.getItems().addAll("Gol D. Roger", "Edward Newgate", "Kaido", "Charlotte Linlin", "Shanks",
                 "Marshall D. Teach", "Monkey D. Luffy", "Roronoa Zoro", "Sanji", "Nico Robin",
                 "Jinbe", "Brook", "Tony Tony Chopper", "Trafalgar D. Water Law", "Eustass Kid",
@@ -53,5 +54,7 @@ public class BuscarPoster {
         desplegablePirata.setPromptText(resourceBundle.getString("DesplegablePirata"));
         BuscarPoster.setText(resourceBundle.getString("Generar"));
         labelPirata.setText(resourceBundle.getString("LabelPirata"));
+        desplegablePirata.setTooltip(new Tooltip(resourceBundle.getString("TltDesplegablePirata")));
+        BuscarPoster.setTooltip(new Tooltip(resourceBundle.getString("TltbtnBuscarPoster")));
     }
 }

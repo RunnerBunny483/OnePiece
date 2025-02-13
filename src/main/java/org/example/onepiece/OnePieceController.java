@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Button;
@@ -64,7 +65,10 @@ public class OnePieceController {
                 abrirManualUsuario();
             }
         });
-
+        crearPoster.setTooltip(new Tooltip(resourceBundle.getString("TltCrearPoster")));
+        buscarPoster.setTooltip(new Tooltip(resourceBundle.getString("TltBuscarPoster")));
+        botonGenerar.setTooltip(new Tooltip(resourceBundle.getString("TltGenerarInforme")));
+        ayuda.setTooltip(new Tooltip(resourceBundle.getString("TltAyuda")));
     }
 
     /**
@@ -88,7 +92,10 @@ public class OnePieceController {
         crearPoster.setText(resourceBundle.getString("CrearPoster"));
         buscarPoster.setText(resourceBundle.getString("BuscarPoster"));
         botonGenerar.setText(resourceBundle.getString("BotonGenerar"));
-
+        crearPoster.setTooltip(new Tooltip(resourceBundle.getString("TltCrearPoster")));
+        buscarPoster.setTooltip(new Tooltip(resourceBundle.getString("TltBuscarPoster")));
+        botonGenerar.setTooltip(new Tooltip(resourceBundle.getString("TltGenerarInforme")));
+        ayuda.setTooltip(new Tooltip(resourceBundle.getString("TltAyuda")));
     }
 
     /**
