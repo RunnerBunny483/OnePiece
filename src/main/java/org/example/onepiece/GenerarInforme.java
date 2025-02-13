@@ -44,6 +44,13 @@ public class GenerarInforme {
             Tripulacion.getItems().add(tripulacion);
         }
     }
+    //cuando se haga una consulta en inglés pillar la posición de la tripula
+    //If locale eng -->
+    //Gettear posicion en el array de la tripulacion
+    //Cambiar locale a esp, gettear listaTripulaciones otra vez
+    //Gettear posicion en eng en la lista en esp
+    //Guardarlo en variable que se envía al jasper
+    //Cambiar locale a eng otra vez
 
     /**
      * Actualiza los textos de la ventana según el idioma seleccionado.
