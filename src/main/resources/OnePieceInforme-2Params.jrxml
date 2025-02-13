@@ -1,0 +1,164 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="DetectiveConan" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c368610e-5bee-4e75-8f1e-ecda64380534">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="47"/>
+	<property name="ireport.y" value="451"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="OnePiece"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="470"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="522"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50.0" bold="false"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Times New Roman" fontSize="18.0" bold="false"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14.0" bold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle mode="Opaque" backcolor="#F0EFEF">
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+		</conditionalStyle>
+	</style>
+	<dataset name="PieChartDataset" uuid="21b70311-b650-4678-a39c-887917366bf0"/>
+	<parameter name="Tripulacion" class="java.lang.String"/>
+	<parameter name="BerriesMax" class="java.lang.Integer"/>
+	<query language="sql"><![CDATA[SELECT 
+    nombre,
+    apodo,
+    recompensa,
+    tripulacion,
+    edad
+FROM 
+    piratas
+WHERE 
+    ($P{BerriesMax} IS NULL OR recompensa >= $P{BerriesMax})
+    AND ($P{Tripulacion} IS NULL OR tripulacion = $P{Tripulacion})
+ORDER BY 
+    recompensa DESC,
+    tripulacion]]></query>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="apodo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apodo"/>
+		<property name="com.jaspersoft.studio.field.label" value="apodo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="recompensa" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="recompensa"/>
+		<property name="com.jaspersoft.studio.field.label" value="recompensa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="tripulacion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="tripulacion"/>
+		<property name="com.jaspersoft.studio.field.label" value="tripulacion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="edad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="edad"/>
+		<property name="com.jaspersoft.studio.field.label" value="edad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<background height="540" splitType="Stretch">
+		<element kind="image" uuid="be07ed14-480b-4969-939c-13e5d2cf1c7d" x="-6" y="310" width="127" height="230">
+			<expression><![CDATA["Luffy-Chibi.png"]]></expression>
+		</element>
+	</background>
+	<pageHeader height="123" splitType="Stretch">
+		<element kind="frame" uuid="83f5e806-cc04-4161-87a9-07633f604bc1" mode="Opaque" x="-20" y="0" width="842" height="70" forecolor="#C9A97D" backcolor="#C9A97D">
+			<element kind="staticText" uuid="7ba00326-4c12-4c77-830c-49b95a7502f7" x="54" y="7" width="426" height="57" fontName="OP-Wanted" fontSize="42.0" bold="true" italic="false" hTextAlign="Left" style="Title">
+				<text><![CDATA[ONE PIECE PIRATES]]></text>
+			</element>
+			<element kind="image" uuid="cc6fefbc-f2d0-40cb-b76c-cfd95a0cadfc" x="566" y="7" width="197" height="62">
+				<expression><![CDATA["OnePieceLogo.png"]]></expression>
+			</element>
+		</element>
+		<element kind="textField" uuid="c2b2d0da-1fac-48d6-8d25-b50a83b463b0" x="148" y="77" width="234" height="30" fontName="OP-Wanted" fontSize="17.0" bold="true" vTextAlign="Bottom">
+			<expression><![CDATA["Recompensa Berries MAX:"]]></expression>
+		</element>
+		<element kind="textField" uuid="496a248a-c416-445a-a5ad-55a4e330525e" x="467" y="78" width="143" height="30" fontName="OP-Wanted" fontSize="18.0" blankWhenNull="true" bold="true" vTextAlign="Bottom">
+			<expression><![CDATA["Tripulacion:"]]></expression>
+		</element>
+		<element kind="line" uuid="75e60ced-250f-4e0e-a320-0777fa391c80" positionType="FixRelativeToBottom" x="10" y="111" width="769" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="textField" uuid="77407abd-1645-4015-9b0c-2313c1044b37" x="362" y="79" width="100" height="30" fontName="OP-Berries" fontSize="20.0" blankWhenNull="true" hTextAlign="Left" vTextAlign="Bottom">
+			<expression><![CDATA[$P{BerriesMax}]]></expression>
+		</element>
+		<element kind="textField" uuid="9e100714-01c0-4f08-af52-076a90ddb022" x="573" y="78" width="194" height="30" fontName="OP-Wanted" fontSize="18.0" blankWhenNull="true" bold="true" vTextAlign="Bottom">
+			<expression><![CDATA[$P{Tripulacion}]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="28" splitType="Stretch">
+		<element kind="frame" uuid="2a3d298d-90eb-4db1-919a-c9b2ed28c222" x="131" y="0" width="686" height="14">
+			<element kind="staticText" uuid="91a800f5-ffbe-43f6-806c-6d70e5557083" x="325" y="0" width="87" height="28" fontName="OP-Wanted" fontSize="14.0" bold="true">
+				<text><![CDATA[Recompensa]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ddfc181-8d77-4025-ae78-040c2b78dc73"/>
+			</element>
+			<element kind="staticText" uuid="f9d14325-b830-4b0b-b07b-2fe65e315544" x="247" y="0" width="73" height="28" fontName="OP-Wanted" fontSize="14.0" bold="true">
+				<text><![CDATA[Edad]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d652639e-ab5f-4356-84aa-40396f523b7b"/>
+			</element>
+		</element>
+		<element kind="staticText" uuid="c0e15de2-8bf6-4a90-a10b-7757181efcd3" x="149" y="0" width="70" height="20" fontName="OP-Wanted" fontSize="14.0" bold="true">
+			<text><![CDATA[Nombre]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06372ef4-93c2-47f8-b4c7-edb3b44c6100"/>
+		</element>
+		<element kind="staticText" uuid="298fd6d6-0bdf-4d8d-b049-c713996bd719" x="262" y="0" width="50" height="28" fontName="OP-Wanted" fontSize="14.0" bold="true">
+			<text><![CDATA[Apodo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="669a1119-6f41-4810-9f0a-3695c881f3d5"/>
+		</element>
+		<element kind="staticText" uuid="be7124bc-e6a7-415d-9fab-839c5ef35c8f" x="582" y="0" width="107" height="28" fontName="OP-Wanted" fontSize="14.0" bold="true">
+			<text><![CDATA[Tripulacion]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="773b1f5f-2fc5-43c1-bbb0-7cedddcbbef5"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<element kind="line" uuid="ad4e998c-7071-4467-b7fa-4441cc53d3f6" positionType="FixRelativeToBottom" x="131" y="14" width="648" height="2"/>
+			<element kind="frame" uuid="822bafe9-34ee-4b4f-aa76-3eae029c4911" x="131" y="0" width="686" height="14">
+				<element kind="textField" uuid="f725a2db-25f6-4d0d-ad6b-3e1bf1a42d2f" x="322" y="0" width="120" height="21" fontName="OP-Berries" fontSize="14.0">
+					<expression><![CDATA[$F{recompensa}]]></expression>
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32ff2eda-e434-4497-81a0-b08dfacf3ea3"/>
+				</element>
+			</element>
+			<element kind="textField" uuid="cdbecc7f-8943-4d3c-9e19-abf9dc03fc07" x="150" y="0" width="111" height="22" fontName="OP-Wanted">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="06372ef4-93c2-47f8-b4c7-edb3b44c6100"/>
+			</element>
+			<element kind="textField" uuid="64db2a19-bb8f-4744-a5e9-c5e28bf49a3d" x="263" y="0" width="103" height="22" fontName="OP-Wanted">
+				<expression><![CDATA[$F{apodo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="669a1119-6f41-4810-9f0a-3695c881f3d5"/>
+			</element>
+			<element kind="textField" uuid="24e68f73-f796-4ba9-a693-8608f5fa42c3" x="382" y="0" width="79" height="22" fontName="OP-Berries" fontSize="14.0">
+				<expression><![CDATA[$F{edad}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d652639e-ab5f-4356-84aa-40396f523b7b"/>
+			</element>
+			<element kind="textField" uuid="562bade4-486e-4db8-aa2a-fcc63a3754d5" x="584" y="0" width="137" height="25" fontName="OP-Wanted">
+				<expression><![CDATA[$F{tripulacion}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="773b1f5f-2fc5-43c1-bbb0-7cedddcbbef5"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="26" splitType="Stretch">
+		<element kind="line" uuid="c23ffbf7-1928-41f8-ade3-5930d9a4871d" positionType="FixRelativeToBottom" x="10" y="-1" width="769" height="3">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="textField" uuid="0949411c-aa9f-4f9c-a458-e994d36a20d1" x="336" y="2" width="231" height="22" fontName="OP-Wanted" fontSize="14.0" evaluationTime="Report">
+			<expression><![CDATA["Registros: "+$V{REPORT_COUNT}]]></expression>
+		</element>
+	</columnFooter>
+	<pageFooter height="16" splitType="Stretch">
+		<element kind="frame" uuid="6f4fe8ef-88ca-4d5d-b46a-054826bb7893" mode="Opaque" x="2" y="0" width="800" height="16" forecolor="#D0B48E" backcolor="#C9A97D">
+			<element kind="textField" uuid="970781d6-87a0-4d3d-a07b-5ae173a1317a" x="753" y="0" width="40" height="16" forecolor="#FFFFFF" fontName="OP-Wanted" fontSize="12.0" evaluationTime="Report" bold="false" vTextAlign="Middle" style="Column header">
+				<expression><![CDATA[" " + $V{PAGE_NUMBER}]]></expression>
+			</element>
+			<element kind="textField" uuid="42664b34-c87b-42f8-911b-bd9c2ab9111e" x="674" y="0" width="80" height="16" forecolor="#FFFFFF" fontName="OP-Wanted" fontSize="12.0" bold="false" hTextAlign="Right" vTextAlign="Middle" style="Column header">
+				<expression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></expression>
+			</element>
+			<element kind="textField" uuid="06b3d6e8-b4a5-4251-b1fb-f640689933e8" x="2" y="0" width="197" height="16" forecolor="#FFFFFF" fontName="OP-Wanted" fontSize="12.0" pattern="EEEEE dd MMMMM yyyy" bold="false" vTextAlign="Middle" style="Column header">
+				<expression><![CDATA[new java.util.Date()]]></expression>
+			</element>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>
