@@ -24,10 +24,5 @@
          </image>
       </ImageView>
       <CheckBox fx:id="SoulKing" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" text="Póster especial" />
-      <ImageView fitHeight="105.0" fitWidth="81.0" layoutX="25.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@images/7c8bf058c5a6def48a041c2f6920d58e.jpg" />
-         </image>
-      </ImageView>
    </children>
 </Pane>
