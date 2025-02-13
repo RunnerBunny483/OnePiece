@@ -1,0 +1,46 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="OnePiece-WantedPoster" language="java" pageWidth="438" pageHeight="620" columnWidth="419" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f2a7252f-e9fe-4a71-9014-e9ad862f956b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="OnePiece"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="Nombre" class="java.lang.String"/>
+	<query language="sql"><![CDATA[SELECT nombre,
+	recompensa,
+	urlImagen
+FROM piratas
+WHERE 
+	 nombre LIKE $P{Nombre}]]></query>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="recompensa" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="recompensa"/>
+		<property name="com.jaspersoft.studio.field.label" value="recompensa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<field name="urlImagen" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="urlImagen"/>
+		<property name="com.jaspersoft.studio.field.label" value="urlImagen"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="piratas"/>
+	</field>
+	<background height="620" splitType="Stretch">
+		<element kind="image" uuid="6af24329-9cd1-49ef-b6f6-121b31fa806f" stretchType="ContainerHeight" x="0" y="0" width="438" height="620">
+			<expression><![CDATA["one-piece-wanted-poster-template-sd.png"]]></expression>
+		</element>
+		<element kind="image" uuid="c90cc5db-b7fd-4df4-b33d-84b062582ee5" x="40" y="132" width="358" height="259" scaleImage="FillFrame" hImageAlign="Center" vImageAlign="Middle">
+			<expression><![CDATA["/Fotos"+$F{urlImagen}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+		</element>
+		<element kind="textField" uuid="c5af5239-e11e-409e-a951-c11c86ec8d98" stretchType="NoStretch" x="39" y="450" width="360" height="59" forecolor="#493820" fontName="OP-Wanted" fontSize="33.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{Nombre}.toUpperCase()]]></expression>
+		</element>
+		<element kind="textField" uuid="09ff9eea-4372-45a6-a029-c65dd20dc303" stretchType="NoStretch" x="76" y="509" width="310" height="60" forecolor="#513D23" fontName="OP-Berries" fontSize="42.0" vTextAlign="Middle">
+			<paragraph lineSpacingSize="1.0"/>
+			<expression><![CDATA[new java.text.DecimalFormat("#,###").format($F{recompensa})]]></expression>
+		</element>
+	</background>
+</jasperReport>
