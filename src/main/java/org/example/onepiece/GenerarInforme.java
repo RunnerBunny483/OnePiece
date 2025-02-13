@@ -80,12 +80,12 @@ public class GenerarInforme {
         conexion = Conexion.getConexion();
 
         Map<String, Object> parametros = new LinkedHashMap<>();
-        String recompensaMinima = labelRecompensa.getText().trim();
+        String recompensaMinima = Recompensa.getText().trim();
         String tripulacion = Tripulacion.getValue().trim();
 
         if (!recompensaMinima.isEmpty()) {
             try {
-                parametros.put("BerriesMax", Long.parseLong(recompensaMinima));
+                parametros.put("BerriesMax", Integer.parseInt(recompensaMinima));
             } catch (NumberFormatException e) {
                 throw new NumberFormatException("Recompensa mínima inválida.");
             }

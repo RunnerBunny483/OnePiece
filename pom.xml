@@ -70,6 +70,13 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
         </dependency>
+        <dependency>
+            <groupId>local.jasperFontOverrides</groupId>
+            <artifactId>local.jasperFontOverrides</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/fonts-extension.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
