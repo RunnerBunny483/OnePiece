@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
@@ -125,35 +126,38 @@ public class OnePieceController {
     }
 
     /**
-     * Abre la ventana Buscar Poster
+     * Abre la ventana Buscar Póster
      *
      * @throws IOException Si ocurre un error al cargar el archivo FXML.
      */
-    //Método para abrir "Buscar Poster"
+    //Método para abrir "Buscar Póster"
     public void abrirBuscarPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/buscar-poster.fxml"));
         Parent root = loader.load();
 
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setTitle("Buscar Poster");
+        stage.setTitle("Buscar Póster");
+        Image icon = new Image(getClass().getResourceAsStream("images/JollyRogerMugiwara.png"));
+        stage.getIcons().add(icon);
         stage.setScene(new Scene(root));
         stage.show();
     }
 
     /**
-     * Abre la ventana Crear Poster
+     * Abre la ventana Crear Póster
      *
      * @throws IOException Si ocurre un error al cargar el archivo FXML.
      */
-    //Método para abrir "Crear Poster"
+    //Método para abrir "Crear Póster"
     public void abrirCrearPoster() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/onepiece/crear-poster.fxml"));
         Parent root = loader.load();
-
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setTitle("Crear Poster");
+        stage.setTitle("Crear Póster");
+        Image icon = new Image(getClass().getResourceAsStream("images/JollyRogerMugiwara.png"));
+        stage.getIcons().add(icon);
         stage.setScene(new Scene(root));
         stage.show();
     }
@@ -172,6 +176,8 @@ public class OnePieceController {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Generar Informe");
+        Image icon = new Image(getClass().getResourceAsStream("images/JollyRogerMugiwara.png"));
+        stage.getIcons().add(icon);
         stage.setScene(new Scene(root));
         stage.show();
     }

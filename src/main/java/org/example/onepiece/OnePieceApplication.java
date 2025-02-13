@@ -3,6 +3,7 @@ package org.example.onepiece;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,7 +32,8 @@ public class OnePieceApplication extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(OnePieceApplication.class.getResource("principal-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 450, 325);
-        stage.setTitle("One Piece Application");
+        stage.setTitle("One Piece Wanted");
+        stage.getIcons().add(new Image(OnePieceApplication.class.getResourceAsStream("images/JollyRogerMugiwara.png")));
         stage.setScene(scene);
         stage.show();
 
