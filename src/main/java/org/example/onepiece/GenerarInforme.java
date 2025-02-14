@@ -119,8 +119,8 @@ public class GenerarInforme {
 
     /**
      * Impresión del informe y elección de su ruta de creación
-     * @param ficheroInforme ruta del jasper en el proyecto Java
-     * @param parametros parámetros seleccionados para la creación del informe
+     * @param ficheroInforme String, ruta del jasper en el proyecto Java
+     * @param parametros Map<String, Object> parámetros seleccionados para la creación del informe
      */
     private void imprimirInforme(String ficheroInforme, Map<String, Object> parametros){
         try{
