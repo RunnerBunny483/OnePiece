@@ -40,7 +40,7 @@ public class GenerarInforme {
 
     /**
      * Método que se ejecuta al inicializar la ventana.
-     * Rellena el ComboBox con los nombres de la tripulación y cambia el array según el idioma seleccionado pro el usuario en la ventana principal
+     * Rellena el ComboBox con los nombres de la tripulación y cambia el array según el idioma seleccionado por el usuario en la ventana principal
      */
     public void initialize() {
         actualizarIdiomaVentana();
